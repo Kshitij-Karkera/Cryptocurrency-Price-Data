@@ -1,0 +1,67 @@
+.blockchain-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1500px;
+    width: 800px;
+    height: 400px;
+}
+
+.cube {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: rotateCube 3s infinite ease-in-out;
+}
+
+.cube-face {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #0382bd;
+    border: 1px solid #025276;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.cube-face.front {
+    transform: rotateY(0deg) translateZ(25px);
+}
+
+.cube-face.back {
+    transform: rotateY(180deg) translateZ(25px);
+}
+
+.cube-face.left {
+    transform: rotateY(-90deg) translateZ(25px);
+}
+
+.cube-face.right {
+    transform: rotateY(90deg) translateZ(25px);
+}
+
+.cube-face.top {
+    transform: rotateX(90deg) translateZ(25px);
+}
+
+.cube-face.bottom {
+    transform: rotateX(-90deg) translateZ(25px);
+}
+
+@keyframes rotateCube {
+    0% {
+        transform: rotate3d(1, 1, 0, 0deg);
+    }
+    25% {
+        transform: rotate3d(1, 1, 0, 90deg);
+    }
+    50% {
+        transform: rotate3d(1, 1, 0, 180deg);
+    }
+    75% {
+        transform: rotate3d(1, 1, 0, 270deg);
+    }
+    100% {
+        transform: rotate3d(1, 1, 0, 360deg);
+    }
+}

@@ -1,0 +1,22 @@
+.chartContainer {
+    border-radius: 10px;
+    width: max-content;
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    pointer-events: none;
+}
+
+.dropdowns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media only screen and (max-width: 750px) {
+    .dropdowns {
+        flex-direction: column;
+    }
+}

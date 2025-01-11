@@ -1,0 +1,5 @@
+.selected-symbol-container {
+    pointer-events: all;
+    display: flex;
+    align-items: center;
+}

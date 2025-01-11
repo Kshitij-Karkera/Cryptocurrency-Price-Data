@@ -1,0 +1,5 @@
+.select-chart-container {
+    pointer-events: all;
+    display: flex;
+    align-items: center;
+}
