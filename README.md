@@ -12,3 +12,12 @@ Cryptocurrency Price Data that fetches historical and live prices of selected cr
   - Line Chart
 - **Theme Toggle**: Switch between light and dark modes for personalized viewing.
 
+![Picture1](./screenshots/Picture1.png)
+
+![Picture2](./screenshots/Picture2.png)
+
+![Picture3](./screenshots/Picture3.png)
+
+![Picture4](./screenshots/Picture4.png)
+
+![Picture5](./screenshots/Picture5.png)
