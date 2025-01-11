@@ -42,7 +42,7 @@ function ChartContainer({ theme, isLoading, historicalData, selectedSymbol, symb
   const SelectedChartComponent = ChartComponents[selectedChart];
 
   return (
-    <div className='chartContainer' style={{border: `1px solid ${theme === 'light' ? '#000' : '#fff'}`}}>
+    <div className='chartContainer' style={{border: `1px solid ${theme === 'light' ? '#252525' : '#e4e4e4'}`}}>
       <div className='dropdowns'>
         <SelectedSymbol
           theme={theme}

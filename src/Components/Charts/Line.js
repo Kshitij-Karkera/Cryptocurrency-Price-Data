@@ -137,7 +137,7 @@ function Line({ theme, data, interval, symbol }) {
 
         const crosshairX = svg.append('line')
             .attr('class', 'crosshair-x')
-            .attr('stroke', {theme})
+            .attr('stroke', theme === 'light' ? '#252525' : '#e4e4e4')
             .attr('opacity', '0.5')
             .attr('stroke-dasharray', '5,5')
             .attr('y1', margin.top)
@@ -146,7 +146,7 @@ function Line({ theme, data, interval, symbol }) {
             .attr('pointer-events', 'none');
         const crosshairY = svg.append('line')
             .attr('class', 'crosshair-y')
-            .attr('stroke', {theme})
+            .attr('stroke', theme === 'light' ? '#252525' : '#e4e4e4')
             .attr('opacity', '0.5')
             .attr('stroke-dasharray', '5,5')
             .attr('x1', margin.left)
